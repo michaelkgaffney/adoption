@@ -23,7 +23,7 @@ public class PupperController {
     public ResponseEntity<Pupper> addPupper(@RequestBody Pupper p) {
 
         service.addPupper(p);
-        return new ResponseEntity(p, HttpStatus.CREATED);
+        return new ResponseEntity(p, HttpStatus.OK);
     }
 
     @PatchMapping("/pupper/{id}")
