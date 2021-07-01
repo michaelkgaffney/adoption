@@ -1,0 +1,20 @@
+|===
+|Path|Type|Description
+
+|`+[]+`
+|`+Array+`
+|An array of all puppers in the system
+
+|`+[].id+`
+|`+Number+`
+|Internal ID of the pupper. For use with PATCH
+
+|`+[].name+`
+|`+String+`
+|The name of the pupper
+
+|`+[].breed+`
+|`+String+`
+|The name of the breed of the pupper
+
+|===

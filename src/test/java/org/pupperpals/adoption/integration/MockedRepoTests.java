@@ -49,9 +49,10 @@ public class MockedRepoTests {
                 .andExpect(jsonPath("[0]").value(puppers.get(0)))
                 .andExpect(jsonPath("[1]").value(puppers.get(1)))
                 .andDo(document("puppers GET", responseFields(
-                        fieldWithPath("id").description("Internal ID for use with PATCH"),
-                        fieldWithPath("name").description("The name of the pupper"),
-                        fieldWithPath("breed").description("The name of the breed of the pupper"))
+                        fieldWithPath("[]").description("An array of all puppers in the system"),
+                        fieldWithPath("[].id").description("Internal ID of the pupper. For use with PATCH"),
+                        fieldWithPath("[].name").description("The name of the pupper"),
+                        fieldWithPath("[].breed").description("The name of the breed of the pupper"))
                 ));
     }
 
