@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class PupperController {
 
-    @Autowired
+
     PupperService service;
+
+    public PupperController(PupperService service) {
+        this.service = service;
+    }
 
     @GetMapping("/puppers")
     public ResponseEntity<Iterable<Pupper>> findAllPuppers(){
