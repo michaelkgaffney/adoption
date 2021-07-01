@@ -1,8 +1,0 @@
-[source,http,options="nowrap"]
-----
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 94
-
-[{"id":0,"name":"Spot","breed":"Dalmation"},{"id":0,"name":"Goldie","breed":"Cocker Spaniel"}]
-----

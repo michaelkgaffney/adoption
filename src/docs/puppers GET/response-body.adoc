@@ -1,4 +1,0 @@
-[source,options="nowrap"]
-----
-[{"id":0,"name":"Spot","breed":"Dalmation"},{"id":0,"name":"Goldie","breed":"Cocker Spaniel"}]
-----
